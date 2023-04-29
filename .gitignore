@@ -6,4 +6,4 @@ x64/
 *.vcxproj
 *.vcxproj.filters
 *.vcxproj.user
-/.vs/Tetris
+/.vs
