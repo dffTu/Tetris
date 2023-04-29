@@ -121,7 +121,7 @@ public:
 		text.setFont(font);
 		text.setFillColor(sf::Color::Black);
 
-		text.setString(L"Очки:");
+		text.setString(L"РћС‡РєРё:");
 		sf::FloatRect textRect = text.getLocalBounds();
 		text.setOrigin(textRect.left + textRect.width / 2, textRect.top + textRect.height / 2);
 		text.setPosition(
@@ -150,7 +150,7 @@ public:
 					break;
 				}
 			}
-			if (is_filled_line) {		// Удаляем все заполненные строки и сдвигаем строки выше вниз
+			if (is_filled_line) {		// РЈРґР°Р»СЏРµРј РІСЃРµ Р·Р°РїРѕР»РЅРµРЅРЅС‹Рµ СЃС‚СЂРѕРєРё Рё СЃРґРІРёРіР°РµРј СЃС‚СЂРѕРєРё РІС‹С€Рµ РІРЅРёР·
 				filled_lines_count++;
 				for (int i = y; i >= 1; --i) {
 					for (int j = 0; j < TILES_WIDTH_COUNT; ++j) {
@@ -246,10 +246,10 @@ public:
 		if (game_running) {
 			timer += time;
 			if (timer > 1. / game_speed) {
-				current_y++;					// Опускаем фигуру на 1 вниз
+				current_y++;				// РћРїСѓСЃРєР°РµРј С„РёРіСѓСЂСѓ РЅР° 1 РІРЅРёР·
 				if (figureIntersects()) {
 					current_y--;
-					addFigureToCells();		// Если фигура пересекается, зафиксировать её
+					addFigureToCells();		// Р•СЃР»Рё С„РёРіСѓСЂР° РїРµСЂРµСЃРµРєР°РµС‚СЃСЏ, Р·Р°С„РёРєСЃРёСЂРѕРІР°С‚СЊ РµС‘
 				}
 				timer = 0;
 			}
