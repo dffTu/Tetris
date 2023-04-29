@@ -21,20 +21,20 @@ public:
 				cell[i][j] = false;
 			}
 		}
-		int type = std::rand() % 7;
-		if (type == 0) {			// Square figure
+		int type = std::rand() % 7;						
+		if (type == 0) {							// Square figure
 			cell[1][1] = cell[1][2] = cell[2][1] = cell[2][2] = true;
-		} else if (type == 1) {		// T figure
+		} else if (type == 1) {							// T figure
 			cell[2][0] = cell[1][1] = cell[2][1] = cell[2][2] = true;
-		} else if (type == 2) {		// Z figure
+		} else if (type == 2) {							// Z figure
 			cell[2][0] = cell[2][1] = cell[1][1] = cell[1][2] = true;
-		} else if (type == 3) {		// S figure
+		} else if (type == 3) {							// S figure
 			cell[1][0] = cell[2][1] = cell[1][1] = cell[2][2] = true;
-		} else if (type == 4) {		// L figure
+		} else if (type == 4) {							// L figure
 			cell[3][1] = cell[2][1] = cell[1][1] = cell[3][2] = true;
-		} else if (type == 5) {		// L-backwards figure
+		} else if (type == 5) {							// L-backwards figure
 			cell[3][1] = cell[2][1] = cell[1][1] = cell[1][2] = true;
-		} else if (type == 6) {		// I figure
+		} else if (type == 6) {							// I figure
 			cell[0][1] = cell[1][1] = cell[2][1] = cell[3][1] = true;
 		}
 		int rotations_count = std::rand() % 4;
